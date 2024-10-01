@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import StoreBanner from '../components/store-banner'
@@ -18,40 +17,6 @@ const Home = (props) => {
         <title>Landify</title>
         <meta property="og:title" content="Landify" />
       </Helmet>
-      <div>
-        <div className="home-container12">
-          <Script
-            html={`<script
-  async
-  crossorigin="anonymous"
-  data-clerk-publishable-key="pk_test_ZG9taW5hbnQtcGFuZGEtNDguY2xlcmsuYWNjb3VudHMuZGV2JA"
-  src="https://dominant-panda-48.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
-  type="text/javascript"
-></script>`}
-          ></Script>
-        </div>
-      </div>
-      <div>
-        <div className="home-container14">
-          <Script
-            html={`<script>
-  window.addEventListener('load', async function () {
-    await Clerk.load()
-
-    console.log('ClerkJS is loaded')
-  })
-</script>`}
-          ></Script>
-        </div>
-      </div>
-      <div>
-        <div className="home-container16">
-          <Script
-            html={`<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-`}
-          ></Script>
-        </div>
-      </div>
       <div data-role="Header" className="home-header-container">
         <header className="home-header">
           <div className="home-logo1">
@@ -72,7 +37,7 @@ const Home = (props) => {
               <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
             </svg>
           </div>
-          <div className="home-container17">
+          <div className="home-container11">
             <StoreBanner></StoreBanner>
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">
@@ -107,14 +72,14 @@ const Home = (props) => {
             <span className="home-text21">More</span>
           </div>
           <div className="home-bot">
-            <div className="home-container18">
+            <div className="home-container12">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="home-link1"
               >
-                <div className="home-container19">
+                <div className="home-container13">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="home-icon17"
@@ -129,7 +94,7 @@ const Home = (props) => {
                 rel="noreferrer noopener"
                 className="home-link2"
               >
-                <div className="home-container20">
+                <div className="home-container14">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="home-icon19"
@@ -144,7 +109,7 @@ const Home = (props) => {
                 rel="noreferrer noopener"
                 className="home-link3"
               >
-                <div className="home-container21">
+                <div className="home-container15">
                   <svg
                     viewBox="0 0 950.8571428571428 1024"
                     className="home-icon21"
@@ -159,7 +124,7 @@ const Home = (props) => {
                 rel="noreferrer noopener"
                 className="home-link4"
               >
-                <div className="home-container22">
+                <div className="home-container16">
                   <svg viewBox="0 0 1024 1024" className="home-icon23">
                     <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
                   </svg>
@@ -172,7 +137,7 @@ const Home = (props) => {
       <div className="home-main">
         <div className="home-blur-background"></div>
         <div className="home-hero">
-          <div className="home-container23">
+          <div className="home-container17">
             <h1 className="home-text22 Headline1">
               <span>Organize projects.</span>
               <br></br>
@@ -234,19 +199,19 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home-testimonials">
-        <div className="home-container24">
-          <div className="home-container25">
+        <div className="home-container18">
+          <div className="home-container19">
             <img alt="image" src="/quote-mark.svg" className="home-image18" />
             <h1 className="home-text29 Headline2">
               Real Stories from Real Customers
             </h1>
             <span>Get inspired by these stories.</span>
-            <div className="home-container26">
+            <div className="home-container20">
               <TestimonialsCard imageSrc="/logo-4.svg"></TestimonialsCard>
             </div>
           </div>
-          <div className="home-container27">
-            <div className="home-container28">
+          <div className="home-container21">
+            <div className="home-container22">
               <TestimonialsCard
                 src="/logo-1.svg"
                 text="I used Landify and created a landing page for my startup within a week. The Landify UI Kit is simple and highly intuitive, so anyone can use it."
@@ -255,7 +220,7 @@ const Home = (props) => {
                 imageSrc="/logo-1.svg"
               ></TestimonialsCard>
             </div>
-            <div className="home-container29">
+            <div className="home-container23">
               <TestimonialsCard
                 text="Landify saved our time in designing my company page."
                 text1="Kristin Watson"
@@ -267,7 +232,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home-achievements">
-        <div className="home-container30">
+        <div className="home-container24">
           <h2 className="home-text31">
             <span className="home-text32">
               Our 18 years of
@@ -284,8 +249,8 @@ const Home = (props) => {
             With our super powers we have reached this
           </span>
         </div>
-        <div className="home-container31">
-          <div className="home-container32">
+        <div className="home-container25">
+          <div className="home-container26">
             <StatsCard
               number="10,000+"
               imageSrc="/01.svg"
@@ -297,7 +262,7 @@ const Home = (props) => {
               description="Users"
             ></StatsCard>
           </div>
-          <div className="home-container33">
+          <div className="home-container27">
             <StatsCard number="500+" description="Clients"></StatsCard>
             <StatsCard
               number="140"
@@ -308,7 +273,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home-feature1">
-        <div className="home-container34">
+        <div className="home-container28">
           <img
             alt="image"
             src="/iphonex-1200w.png"
@@ -316,7 +281,7 @@ const Home = (props) => {
             className="home-image19"
           />
         </div>
-        <div className="home-container35">
+        <div className="home-container29">
           <h3 className="Headline3">Headline</h3>
           <span className="home-text37 Lead1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
@@ -328,7 +293,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home-feature2">
-        <div className="home-container36">
+        <div className="home-container30">
           <h2 className="Headline2 home-text38">
             Enter the world of all fashion trends
           </h2>
@@ -347,8 +312,8 @@ const Home = (props) => {
         />
       </div>
       <div className="home-cta">
-        <div className="home-container37">
-          <div className="home-container38">
+        <div className="home-container31">
+          <div className="home-container32">
             <h2 className="Headline2 home-text40">
               Manage your projects from your mobile
             </h2>
@@ -362,7 +327,7 @@ const Home = (props) => {
             </span>
             <StoreBanner></StoreBanner>
           </div>
-          <div className="home-container39">
+          <div className="home-container33">
             <img
               alt="image"
               src="/iphonex-1200w.png"
@@ -379,9 +344,9 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home-footer">
-        <footer className="home-container40">
+        <footer className="home-container34">
           <img alt="image" src="/logotype-light.svg" className="home-image23" />
-          <div className="home-container41">
+          <div className="home-container35">
             <span className="home-text44">About</span>
             <span className="home-text45">Features</span>
             <span className="home-text46">Pricing</span>
@@ -390,18 +355,18 @@ const Home = (props) => {
             <span className="home-text49">Privacy Policy</span>
           </div>
           <div className="home-divider3"></div>
-          <div className="home-container42">
+          <div className="home-container36">
             <span className="home-text50 Body2">
               © 2020 Landify UI Kit. All rights reserved
             </span>
-            <div className="home-container43">
+            <div className="home-container37">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="home-link5"
               >
-                <div className="home-container44">
+                <div className="home-container38">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="home-icon25"
@@ -416,7 +381,7 @@ const Home = (props) => {
                 rel="noreferrer noopener"
                 className="home-link6"
               >
-                <div className="home-container45">
+                <div className="home-container39">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="home-icon27"
@@ -431,7 +396,7 @@ const Home = (props) => {
                 rel="noreferrer noopener"
                 className="home-link7"
               >
-                <div className="home-container46">
+                <div className="home-container40">
                   <svg
                     viewBox="0 0 950.8571428571428 1024"
                     className="home-icon29"
@@ -446,7 +411,7 @@ const Home = (props) => {
                 rel="noreferrer noopener"
                 className="home-link8"
               >
-                <div className="home-container47">
+                <div className="home-container41">
                   <svg viewBox="0 0 1024 1024" className="home-icon31">
                     <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
                   </svg>
