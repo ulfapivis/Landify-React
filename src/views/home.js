@@ -12,7 +12,7 @@ import './home.css'
 
 const Home = (props) => {
   return (
-    <div className="home-container10">
+    <div id="app" className="home-container10">
       <Helmet>
         <title>Landify</title>
         <meta property="og:title" content="Landify" />
