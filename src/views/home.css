@@ -888,6 +888,9 @@
 .home-icon31:hover {
   fill: var(--dl-color-orange-default);
 }
+.home-container43 {
+  display: contents;
+}
 @media(max-width: 991px) {
   .home-container11 {
     display: none;

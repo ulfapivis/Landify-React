@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import StoreBanner from '../components/store-banner'
@@ -420,6 +421,39 @@ const Home = (props) => {
             </div>
           </div>
         </footer>
+      </div>
+      <div>
+        <div className="home-container43">
+          <Script
+            html={`<script>
+  window.addEventListener('load', async function () {
+    await Clerk.load();
+
+    const updateUI = () => {
+      if (Clerk.user) {
+        document.getElementById('app').innerHTML = \`
+          <div id="user-button"></div>
+        \`;
+        const userButtonDiv = document.getElementById('user-button');
+        Clerk.mountUserButton(userButtonDiv);
+      } else {
+        document.getElementById('app').innerHTML = \`
+          <div id="sign-in"></div>
+        \`;
+        const signInDiv = document.getElementById('sign-in');
+        Clerk.mountSignIn(signInDiv);
+      }
+    };
+
+    // Initial UI update
+    updateUI();
+
+    // Listen for authentication state changes
+    Clerk.addListener('auth:change', updateUI);
+  });
+</script>`}
+          ></Script>
+        </div>
       </div>
     </div>
   )
